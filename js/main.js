@@ -18,60 +18,6 @@ percent_2.innerHTML = range_2.value + '%';
 percent_3.innerHTML = range_3.value + '%';
 percent_4.innerHTML = range_4.value + '%';
 
-range_1.oninput = function() {
-  percent_1.innerHTML = this.value + '%';
-
-  range_2.max = (max - this.value) / 3;
-  percent_2.innerHTML = `${Math.floor((max - this.value) /3)}`;
-
-  range_3.max = (max - this.value) / 3;
-  percent_3.innerHTML = `${Math.floor((max - this.value) /3)}`;
-
-  range_4.max = (max - this.value) / 3;
-  percent_4.innerHTML = `${Math.floor((max - this.value) /3)}`;
-
-}
-
-range_2.oninput = function() {
-  percent_2.innerHTML = this.value + '%';
-
-  range_1.max = (max - this.value) / 3;
-  percent_1.innerHTML = `${Math.floor((max - this.value) /3)}`;
-
-  range_3.max = (max - this.value) / 3;
-  percent_3.innerHTML = `${Math.floor((max - this.value) /3)}`;
-
-  range_4.max = (max - this.value) / 3;
-  percent_4.innerHTML = `${Math.floor((max - this.value) /3)}`;
-
-}
-
-range_3.oninput = function() {
-  percent_3.innerHTML = this.value + '%';
-
-  range_2.max = (max - this.value) / 3;
-  percent_2.innerHTML = `${Math.floor((max - this.value) /3)}`;
-
-  range_1.max = (max - this.value) / 3;
-  percent_1.innerHTML = `${Math.floor((max - this.value) /3)}`;
-
-  range_4.max = (max - this.value) / 3;
-  percent_4.innerHTML = `${Math.floor((max - this.value) /3)}`;
-}
-
-range_4.oninput = function() {
-  percent_4.innerHTML = this.value + '%';
-
-  range_2.max = (max - this.value) / 3;
-  percent_2.innerHTML = `${Math.floor((max - this.value) /3)}`;
-
-  range_3.max = (max - this.value) / 3;
-  percent_3.innerHTML = `${Math.floor((max - this.value) /3)}`;
-
-  range_1.max = (max - this.value) / 3;
-  percent_1.innerHTML = `${Math.floor((max - this.value) /3)}`;
-
-}
 
 
 details.addEventListener('mouseenter', function() {
